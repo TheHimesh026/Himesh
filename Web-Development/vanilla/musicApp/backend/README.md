@@ -1,0 +1,2 @@
+#this whole backened was written the help of chatgpt.it took a lot of time module error and many other error
+#i dont know whats in the backened i just know that it returns data how an dwhy i don't know.

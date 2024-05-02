@@ -1,0 +1,408 @@
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ font-style: bold;
+ font-family: bold;
+}
+
+/*Header-Navbar*/
+
+.navbar{
+ height: 80px;
+ width: 100%;
+ background-color: #ffffff;
+}
+
+a:link{
+ text-decoration:none;
+ color:black;
+}
+
+a{
+ text-decoration:none;
+ color:black;
+ cursor: pointer;
+}
+
+/*header-logo*/
+
+.header-logo{
+ height: 20px;
+ width: 30px;
+ display: inline-block;
+}
+
+.logo{
+ display: inline-block;
+ background-image: url('/Images/myntra_logo.webp');
+ height: 80px;
+ width: 100px;
+ background-size: cover;
+}
+
+.navbar-opt{
+ display: flex;
+ text-decoration: none;
+ height: 80px;
+ justify-content: space-evenly;
+ position: absolute;
+ top: 5px;
+ left: 120px;
+ align-items: center;
+ font-size: 14px;
+ color: #282c3f;
+ font-weight: 600;
+}
+
+.navbar-opt a{
+ margin-right: 12px;
+ text-decoration-color: none;
+ text-decoration: none;
+ text-transform: uppercase;
+ border-bottom: 5px solid #ffffff; 
+}
+
+.navbar-opt a:hover {
+ border-bottom: 4px solid #f54e77;
+}
+
+.navbar-opt a sup {
+ color: #ff3f6c;
+ font-size: 10px;
+}
+
+/*.search-holder {
+  position: absolute;
+  top: 8px;
+  right:0vh;
+  text-align: center;
+}*/
+
+ /*input{
+  color: #696e79;
+  background-color: #f5f5f6;
+  height: 35px;
+  border: 0;
+  border-radius: 0 4px 4px 0;
+  position: absolute;
+  top: 15px;
+  right: 35vh;
+  text-align: center;
+ }*/
+
+.option {
+ display: flex;
+ width: 50px;
+ height: 60px;
+ position: absolute;
+ align-items: center;
+ top: 10px;
+ right: 80px;
+ justify-content: space-evenly;
+ cursor: pointer;
+}
+
+.account,.wishlist,.bag {
+ margin-right: 30px;
+ font-size: 12px;
+ font-weight: 600;
+ text-transform: uppercase;
+}
+
+#acc-txt{
+ margin-top: 7px;
+}
+
+#bag-icon{
+ margin-left: 25%;
+}
+
+
+#acc-icon,#wish-icon{
+ margin-left: 35%;
+}
+
+img{
+ height: 15px;
+ width: 15px;
+}
+
+/**list-items**/
+
+.items-container{
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.item-container{
+ width: 20%;
+ margin-left: 35px;
+ margin-top: 2vh;
+ margin-bottom: 3vh;
+}
+
+.item-image{
+ background-size: cover;
+ height: 240px;
+ width:100%;
+ border: 0.10px solid black;
+ border-radius: 2px;
+}
+
+/* .item-details {
+    margin-top: 2px;
+    cursor: pointer;
+    width: 250px;
+    margin: 10px;
+} */
+
+.stars {
+    font-size: 12px;
+    font-weight: 700;
+    text-align: left;
+    margin-top: 5px;
+}
+.company {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    color: #282c3f;
+    margin-bottom: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 18px;
+}
+.item-name {
+    color: #535766;
+    font-size: 16px;
+    line-height: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 400;
+    display: block;
+}
+.price-container {
+    margin-top: 10px;
+}
+.current-price {
+    font-size: 14px;
+    font-weight: 700;
+    color: #282c3f;
+}
+.original-price {
+    text-decoration: line-through;
+    color: #7e818c;
+    font-weight: 400;
+    margin-left: 5px;
+    font-size: 12px;
+}
+.discount-percentage {
+    color: #ff905a;
+    font-weight: 400;
+    font-size: 12px;
+    margin-left: 5px;
+}
+.btn-bag {
+    cursor: pointer;
+    background-color: lightgreen;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 7px;
+    font-size: 15px;
+}
+ /**footer**/
+ 
+.footer_container {
+    height: 300px;
+    padding: 30px 0px 40px 0px;
+    background: #FAFBFC;
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid #eaeaec;
+}
+
+.footer_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_column h3 {
+    color: #282c3f;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.footer_column a {
+    color: #696b79;
+    font-size: 15px;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+.copyright {
+    color: #94969f;
+    text-align: center;
+    padding: 15px;
+}
+
+          /* cart-summary */
+ 
+ .cart-summary{
+  width: 100%;
+  display: flex;
+ }
+ 
+ .cart-items{
+  height: 150px;
+  width: 100%;
+  border: 2px solid #eaeaec;
+  border-radius: 3px;
+  padding: 0 0 5px 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+ }
+ 
+ .cart-items-container {
+ width: 50%;
+ margin: 2% 0 0 5%;
+}
+.cart-items-price-container{
+  margin: 2% 5% 2% 10%;
+}
+
+              /*product-info */
+ 
+ .remove-item{
+  float: right;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 30px;
+ }
+ 
+ .cart-image{
+  background-size: cover;
+  width: 100px;
+  height: 125px;
+  border: 0.6px solid #eaeacd;
+  margin-top: 10px;
+  margin-left: 15px;
+  border-radius: 1px;
+ }
+ 
+ .item-info{
+  width: 250px;
+  position: relative;
+  bottom: 120px;
+  left: 130px;
+  line-height: 1.4;
+ }
+ 
+ #company_name{
+  font-size: 14px;
+  margin-top: 2px;
+  font-weight: 500;
+ }
+ 
+ #product_name{
+  font-size: 14px;
+  margin-top: 0.5px;
+ }
+
+#current_price{
+ font-size: 14px;
+ font-weight: 800;
+ color: #535766;
+ margin-top: 2px;
+} 
+ 
+#original_price{
+ font-size: 14px;
+ text-decoration: line-through;
+ color: #535766;
+}
+ 
+#discount_percentge{
+ font-size: 14px;
+ color: rgb(240,130,43);
+  
+ }
+
+#return_date{
+ font-size: 14px;
+} 
+ 
+#delivery_date{
+ margin-top: 4px;
+ font-size: 14px;
+ color: #03a685
+}
+
+ .cart-items-price{
+  border: 2px solid #eaeaec;
+  height: 14vh;
+  display: flex;
+  border-radius: 3px;
+  line-height: 1.6;
+  flex-wrap: wrap;
+  padding: 3px;
+ }
+ 
+ .item-price-tag{
+  font-size: 14px;
+  padding: 5px;
+  width: 55%;
+  line-height: 2;
+ }
+ 
+ #price-details{
+  font-size: 12px;
+  font-weight: 700;
+ }
+ #price-details-count{
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 5px;
+ }
+ 
+.price-tag-container{
+  display: inline;
+  width: 41%;
+  position: relative;
+  line-height: 1.8;
+}
+
+.price-tag{
+  display: flex;
+  flex-direction: column;
+  float: right;
+  width: 100%;
+  padding-left: 35%;
+}
+
+ #discount-mrp-value{
+  color: #03a685;
+  float: right;
+ }
+ 
+.place-order{
+  width: 95%;
+  height: 30px;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 2px;
+  border-width: 0px;
+  padding: 5px 5px 5px 5px;
+  margin-top: 5px;
+  margin-left: 5px;
+  background-color: rgb(255, 63, 108);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}

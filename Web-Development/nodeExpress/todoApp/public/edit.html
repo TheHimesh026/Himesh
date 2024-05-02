@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Edit Task</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+    }
+    .container {
+        max-width: 400px;
+        margin: 25% auto 50% auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        text-align: center;
+        color: #333;
+    }
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type="checkbox"] {
+        margin-left: 10px;
+    }
+    button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin: 10% 50% 0 40%;
+    }
+    input[type="text"]:disabled {
+    background-color: #f2f2f2;
+    color: #999;
+    border: 1px solid #ccc;
+    }
+    button:hover {
+        background-color: #45a049;
+    }
+    .checkbox-container{
+      display: flex;
+      align-items: center;
+    }
+    .completed{
+      display: block;
+      margin-top: 10px;
+      text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Edit Task</h2>
+    <form action="#">
+        <label for="taskId">Task ID:</label>
+        <input type="text" id="taskId" name="taskId" placeholder="Task ID" disabled>
+        <label for="taskName">Task:</label>
+        <input type="text" id="taskName" name="taskName" placeholder="Enter Task">
+      <div class="checkbox-container">
+        <label for="checkbox-input" class="completed">Completed:</label>
+         <input type="checkbox" id="checkbox-input" name="complete">
+      </div>
+        <button type="submit" onclick="editInfo()">Save</button>
+    </form>
+</div>
+ <script src="./edit.js"></script>
+</body>
+</html>

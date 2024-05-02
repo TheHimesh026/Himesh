@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astra Currency Converter</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="item-container">
+            <div class="heading"><h1>Currency Converter</h1></div>
+            <div class="input-box-container">
+                <input type="text" id="input-box" placeholder="Enter value">
+            </div>
+            <div class="option-selection-container">
+                <div id="from-opt-container">
+                    <label for="from-box">From:</label>
+                    <select id="from-box">
+                    <option>INR</option>
+                    </select>
+                </div>
+                <div id="to-opt-container">
+                    <label for="to-box">To:</label>
+                    <select id="to-box">
+                      <option>USD</option>
+                    </select>
+                </div>
+            </div>
+          <div class="value-displayer">
+          Mic Check</div>
+            <div class="btn-holder">
+            <button onclick="callSubmit()" class="submit-btn">Convert Value</button>
+             </div>
+        </div>
+    </div>
+     <p class="para">This is the exchange rate of 2024.<br>Update to view latest rates.</p>
+    <script src="./index.js"></script>
+     <script src="./currency code.js">
+    </script>
+</body>
+</html>

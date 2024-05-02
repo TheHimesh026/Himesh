@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todo App</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="container">
+    <h1 class="heading">Todo App</h1>
+    <span class="image-holder" onclick="toggleDarkMode()">
+      <img src="./moon.png" class="image">
+    </span>
+    <input type="text" placeholder="Add Todo" class="input-box">
+    <button class="add-btn button" onclick="addTodo()">Add</button>
+    
+    <div class="ul-container">
+    <ul>
+      <div class="li-container">
+      </div>
+    </ul>
+    <p class="empty-msg"></p>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>

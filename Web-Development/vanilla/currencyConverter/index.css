@@ -1,0 +1,134 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body{
+ background-color: orange;
+}
+
+h1{
+  font-size: 18px;
+  text-align: center;
+}
+
+.container{
+ background-color: #f2f1f4;
+ border-radius: 7px;
+ border: 1px solid black;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin: 40% 15% 0 15%;
+}
+
+.item-container{
+ margin-left: 10px;
+ margin-right: 10px;
+}
+
+.heading{
+ padding: 10px 0px 10px 8px;
+ color: black;
+ text-shadow: 1px 1px 1px solid orange;
+ font-size: 24px;
+ font-weight: 800;
+}
+
+.input-box-container{
+ font-size: 13px; 
+ margin-top: 5%;
+}
+
+#input-box{
+ height: 30px;
+ border-radius: 5px;
+ width: 100%;
+ border: 0.4px solid blue;
+ padding-left: 4px;
+ font-weight: 500;
+}
+
+.option-selection-container{
+ margin-top: 15px;
+ display: flex;
+ width: 100%;
+ font-size: 14px;
+ font-weight: 600;
+ min-height: 50px;
+}
+
+#from-opt-container{
+ margin-left: 5px;
+}
+
+#to-opt-container{
+ margin-left: 50%;
+}
+
+ select{
+ border: 0.25px solid black;
+ width: 50px;
+ height: 25px;
+ background-color: white;
+ border-radius: 2px;
+}
+
+.value-displayer{
+ margin-top: 18px;
+ background-color: #fff1ff;
+ border: 1px solid black;
+ border-radius: 2px;
+ min-height: 40px;
+ font-size: 14px;
+ font-weight: 600;
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+}
+
+button{
+ width: 90%;
+ min-height: 35px;
+ border: none;
+ border-radius: 5px;
+ background-color: purple;
+ margin-left: 5%;
+ margin-top: 7%;
+ margin-bottom: 10px;
+ color: white;
+}
+
+@media (min-width:1000px){
+  *{
+    flex-grow: 2;
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    padding: 15px;
+    width: 35vh;
+  }
+  h1{
+    text-align: center;
+    font-size: 2rem;
+  }
+  .heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+  }
+}
+
+.para{
+  font-size: 8px;
+  position: absolute;
+  top: 4px;
+  right: 0;
+}

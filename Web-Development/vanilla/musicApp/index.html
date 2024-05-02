@@ -1,0 +1,46 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>Astra Music Player</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body class="text-center bg-slate-900">
+    <div class="container rounded-2 rounded mt-1">
+      <div class="nav-holder flex rounded my-8 mx-3 h-12 justify-evenly">
+     <div class="back-btn h-full mr-2 overflow-hidden hidden px-1 my-1" onclick="returnBack()">
+       <img src="./source/back-button.png" class="w-full h-full bg-white rounded-full overflow-hidden">
+     </div>
+     <div class="search-holder flex border h-full rounded" onclick="border()">
+       <div class="search">
+         <input type="text" placeholder="Search songs" class="h-full pl-2 input-bar focus:outline-none rounded-tl rounded-bl">
+       </div>
+      <span class="seach-icon-holder bg-blue px-1 py-0.5 w-12 bg-white" onclick="startSearchProcess()">
+        <img src="./source/glass.png" class="w-full h-full">
+       </span>
+     </div>
+   </div>
+    <div class="body-wrapper">
+      <!--code injected-->
+     </div>
+    </div>
+     <span class="absolute bottom-0 right-2"><p class="text-white text-xs">Made with ❤️ by Himesh</p></span>
+  <script src="./scripts/music.js"></script>
+  <script src="./scripts/search.js"></script>
+  <script src="./scripts/index.js"></script>
+  <script src="./scripts/reRender.js"></script>
+  </body>
+  </html>
+  
+  
+       <!--Extra Functions -->
+  
+  <!-- File input 
+        <span class="relative bottom-2">
+         <input type="file" accept="audio/*" class="text-xs ml-5 file">         </span>
+         </div>-->
+  <!--Drag volume
+    <div class="footer p-2 mx-2 flex mt-6 h-12">
+       <div class="vol-container border ">
+         <input type="range" class="vol-range opacity-0 w-56 h-12" min="0" max="1" step="0.01" oninput="changeVolume()">
+       </div>
+         </div>-->

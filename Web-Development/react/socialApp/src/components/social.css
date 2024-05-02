@@ -1,0 +1,46 @@
+.active {
+    background-color: blue;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+}
+
+.custom-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.custom-label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.custom-input,
+.custom-textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.custom-textarea {
+  resize: vertical;
+}
+
+.custom-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.custom-button:hover {
+  background-color: #0056b3;
+}

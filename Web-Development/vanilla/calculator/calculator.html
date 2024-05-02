@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="/storage/emulated/0/026/Web-development/Project/Calculator/calculator.css" />
+</head>
+<body>
+           <div id="container">
+             <input type="text" id="display" read-only />
+             
+             <hr />
+             
+           <div id="button_group">
+            
+             <button onclick=" store += '.'
+             document.getElementById('display').value = store">.</button>
+            
+             <button onclick=" store = eval(store);
+             document.getElementById('display').value = store">=</button>
+             
+             <button onclick=" store = '';
+             document.getElementById('display').value = store">C</button>
+            
+             <button onclick=" store += '/'
+             document.getElementById('display').value = store">/</button>
+             
+             <button onclick=" store += '1';
+             document.getElementById('display').value = store">1</button>
+            
+             <button onclick=" store += '2'
+             document.getElementById('display').value = store">2</button>
+            
+             <button onclick=" store += '3'
+             document.getElementById('display').value = store">3</button>
+            
+             <button onclick=" store += '+'
+             document.getElementById('display').value = store">+</button>
+            
+             <button onclick=" store += '4'
+             document.getElementById('display').value = store">4</button>
+            
+             <button onclick=" store += '5'
+             document.getElementById('display').value = store">5</button>
+            
+             <button onclick=" store += '6'
+             document.getElementById('display').value = store">6</button>
+            
+             <button onclick=" store += '-';
+             document.getElementById('display').value = store">-</button>
+            
+             <button onclick=" store += '7'
+             document.getElementById('display').value = store">7</button>
+            
+             <button onclick=" store += '8'
+             document.getElementById('display').value = store">8</button>
+            
+             <button onclick=" store += '9'
+             document.getElementById('display').value = store">9</button>
+            
+             <button onclick=" store += '*'
+             document.getElementById('display').value = store">x</button>
+            
+             <button id="btn-0" onclick=" store += '0'
+             document.getElementById('display').value = store">0</button>
+             
+          </div>
+           </div>
+           
+             <script>
+             let store = '';
+             document.getElementById('display').value = store;
+             </script>
+  
+</body>
+</html>

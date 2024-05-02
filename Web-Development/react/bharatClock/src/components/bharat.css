@@ -1,0 +1,12 @@
+.container{
+border: 1px solid black;
+margin-left: 10px;
+margin-right: 10px;
+text-align: center;
+line-height: 2;
+border-radius: 3px;
+}
+
+h1, p{
+font-weight: 900;
+}
