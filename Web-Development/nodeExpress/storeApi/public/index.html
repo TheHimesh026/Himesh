@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Store API</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Store API</h1>
+    <div class="search-container">
+      <form id="searchForm">
+        <input type="text" id="searchInput" placeholder="Search products...">
+        <button onclick="fetchSearchedProduct()">Search</button>
+      </form>
+    </div>
+<div class="filter-options">
+  <label class="filter-label" for="sortBy">Sort by:</label>
+  <select class="filter-select" id="sortBy">
+    <option value="name" selected>Name</option>
+    <option value="date">Date</option>
+<!--<option value="rating">Rating    </option>
+  <option value="price">Price</option>-->
+  </select>
+
+  <label class="filter-label" for="filterByFeatured">
+    <input type="checkbox" id="filterByFeatured"> Featured
+  </label>
+
+  <label class="filter-label" for="itemsPerPage">Items per page:</label>
+  <select class="filter-select" id="itemsPerPage">
+    <option value="5">5</option>
+    <option value="10" selected>10</option>
+    <option value="15">15</option>
+    <option value="20">20</option>
+  </select>
+  <label for="totalitems" class="labeloftotal">Total Items:</label> 
+  <p class="noofitems" id="totalitems">0</p>
+</div>
+
+    <ul class="product-list" id="productList">
+      <!--Code injected by js-->
+    </ul>
+
+    <div class="pagination">
+      <button id="prevPage">Previous</button>
+      <span id="currentPage">Page 1</span>
+      <button id="nextPage">Next</button>
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="./index.js"></script>
+</html>
