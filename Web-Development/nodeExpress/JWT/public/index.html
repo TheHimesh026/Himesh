@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./index.css">
+  <title>JWT</title>
+</head>
+<body>
+  <div class="app">
+    <h1>JWT</h1>
+    <form label="input">
+      <label for="username">Username</label>
+        <input type="text" id="username" class="user-holder">
+      <label for="password">Password</label>
+      <input type="text" id="password" class="pass-holder">
+      <button class="submit-btn" onclick="handleSubmit()">Login</button>
+    </form>
+    <div class="dashboard">
+      <h2>Dashboard</h2>
+      <p class="random-no"></p>
+      <button class="get-no" onclick="randomNo()">Generate No.</button>
+    </div>
+  </div>
+  <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
