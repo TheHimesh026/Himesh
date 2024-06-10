@@ -1,0 +1,1 @@
+It uses React-redux & redux package

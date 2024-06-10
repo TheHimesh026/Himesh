@@ -18,14 +18,14 @@ const storeReducer = (store = INITIAL_VALUE, action) => {
   return newStore;
 };
 
-const store = redux.createStore(storeReducer);
+const store = redux.createStore(storeReducer); //creates a new store
 
 const subscriber = () => {
-  const state = store.getState();
+  const state = store.getState(); //it just gets the state 
   console.log(state);
 };
 
-store.subscribe(subscriber);
+store.subscribe(subscriber); //its subscribing the store for any changes
 
 store.dispatch({ type: "INCREMENT" });
 store.dispatch({ type: "DECREMENT" });

@@ -1,4 +1,4 @@
-import {createSlice} from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
 const counterSlice = createSlice({
   name: "counter",
@@ -20,4 +20,4 @@ const counterSlice = createSlice({
 });
 
 export default counterSlice;
-export const counterActions = counterSlice.actions;
+export const counterActions = counterSlice.actions; //exports the action object

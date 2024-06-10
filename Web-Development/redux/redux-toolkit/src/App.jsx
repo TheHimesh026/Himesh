@@ -7,7 +7,7 @@ import {useSelector} from 'react-redux'
 
 
 function App() {
-  const Privacy = useSelector(store => store.privacy);
+  const Privacy = useSelector(store => store.privacy); //selects the part of store
   
  return (
   <center>

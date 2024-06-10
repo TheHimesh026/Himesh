@@ -1,11 +1,11 @@
 import {useDispatch} from 'react-redux'
 import {useRef} from 'react'
 import {counterActions} from '../store/counter.js'
-import {privacyActions} from '../store/privacy.js'
+import {privacyActions} from '../store/privacy.js' //action of privacy is getting imported to be dispatched 
 
 function CounterButtons (){
   
-  const dispatch = useDispatch();
+  const dispatch = useDispatch();//use to dispatch actions
   const refElement = useRef();
   
   const incrementHandler = () => {
